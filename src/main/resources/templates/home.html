@@ -5,7 +5,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding:40px;margin: 30px; font-size: 25px";>
         <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="/">Home</a>
@@ -13,36 +13,94 @@
             <li class="nav-item">
                 <a class="nav-link" href="/bootcamp">About Bootcamp</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/gitHub">GitHub</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/coreJava">Core Java</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/bootcamp" id="navbardrop" data-toggle="dropdown">
+                    Blog
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/gitHub">GitHub</a>
+                    <a class="dropdown-item " href="/coreJava">Core Java</a>
+                    <a class="dropdown-item" href="/OOP">Object Oriented Programming</a>
+                    <a class="dropdown-item" href="/html">HTML/CSS</a>
+                    <a class="dropdown-item" href="/bootStrap">BootStrap</a>
+                </div>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="/OOP">Object Oriented Programming</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/html">HTML/CSS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/bootStrap">BootStrap</a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link " href="/author">About Author</a>
             </li>
         </ul>
         </ul>
     </nav>
+    <h1 style="text-align:center" >My Blog Home</h1>
 </head>
 <body>
-<h1>Boot Camp</h1>
-<h1>Core Java</h1>
-<h1>Object Oriented programming</h1>
-<h1>HTML/CSS</h1>
-<h1>Bootstrap</h1>
-<h1>Github</h1>
+<DIV style="background-color:mintcream;color:black;padding:40px;border: 10px solid powderblue;
+    margin: 30px;">
+    <h3>Bootcamp</h3>
+    <p>September 27, 2019</p>
+    <P>What is America's Promise Java Web Developer Boot Camp? This Java Web Developer Boot Camp is an 8 hour a day (9 am - 5 pm, M-F) 8-week.<a href="/bootcamp">view more</a></P>
+</div>
+<DIV style="background-color:mintcream;color:black;padding:40px;border: 10px solid powderblue;margin: 30px;">
+    <h3>Core Java</h3>
+    <p>September 27, 2019</p>
+    <P>Java is a programming language and a computing platform for application development.<a href="/coreJava">view more</a></P>
+</div>
+
+<DIV style="background-color:mintcream;color:black;padding:40px;border: 10px solid powderblue;
+    margin: 30px;">
+    <h3>Object Oriented programming</h3>
+    <p>September 27, 2019</p>
+    <P>Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data, in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods). A feature of objects is an object's procedures that can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self").<a href="/OOP">view more</a></P>
+</div>
+
+<DIV style="background-color:mintcream;color:black;padding:40px;border: 10px solid powderblue;
+    margin: 30px;">
+    <h3>HTML/CSS</h3>
+    <p>September 27, 2019</p>
+    <P> HTML stands for Hyper Text Markup Language.What is CSS? <a href="/html">view more</a></P>
+</div>
+
+<DIV style="background-color:mintcream;color:black;padding:40px;border: 15px solid powderblue;
+    margin: 30px;">
+    <h3>Bootstrap</h3>
+    <p>September 27, 2019</p>
+    <P>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation and other interface components.<a href="/bootStrap">view more</a></P>
+</div>
+
+<DIV style="background-color:mintcream;color:black;padding:40px;border: 10px solid powderblue;
+    margin: 30px;">
+    <h3>Github</h3>
+    <p>September 27, 2019</p>
+    <P>GitHub is one of the largest code hosts in the world with over 100 million* projects. Private, public, or open source, all repositories are equipped with tools to help you host, version, and release code..<a href="/gitHub">view more</a></P>
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding:40px;margin: 10px; font-size: 20px";>
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/bootcamp">About Bootcamp</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/bootcamp" id="navbarbottom" data-toggle="dropdown">
+                Blog
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="/gitHub">GitHub</a>
+                <a class="dropdown-item " href="/coreJava">Core Java</a>
+                <a class="dropdown-item" href="/OOP">Object Oriented Programming</a>
+                <a class="dropdown-item" href="/html">HTML/CSS</a>
+                <a class="dropdown-item" href="/bootStrap">BootStrap</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link " href="/author">About Author</a>
+        </li>
+    </ul>
+    </ul>
+</nav>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

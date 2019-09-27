@@ -5,7 +5,7 @@
     <title>Object Oriented Programming</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding:40px;margin: 30px; font-size: 25px";>
         <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="/">Home</a>
@@ -13,22 +13,19 @@
             <li class="nav-item">
                 <a class="nav-link" href="/bootcamp">About Bootcamp</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/gitHub">GitHub</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/coreJava">Core Java</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/bootcamp" id="navbardrop" data-toggle="dropdown">
+                    Blog
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/gitHub">GitHub</a>
+                    <a class="dropdown-item " href="/coreJava">Core Java</a>
+                    <a class="dropdown-item" href="/OOP">Object Oriented Programming</a>
+                    <a class="dropdown-item" href="/html">HTML/CSS</a>
+                    <a class="dropdown-item" href="/bootStrap">BootStrap</a>
+                </div>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="/OOP">Object Oriented Programming</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/html">HTML/CSS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/bootStrap">BootStrap</a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link " href="/author">About Author</a>
             </li>
@@ -38,6 +35,68 @@
 </head>
 <body>
 
+<DIV style="background-color:white;color:black;padding:30px;margin: 20px";>
+    <h3>Introduction to Object Oriented Programming</h3>
+    <p>September 27, 2019</p>
+    <P>Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data, in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods). A feature of objects is an object's procedures that can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self"). In OOP, computer programs are designed by making them out of objects that interact with one another.[1][2] OOP languages are diverse, but the most popular ones are class-based, meaning that objects are instances of classes, which also determine their types.</P>
+</DIV>
+<DIV style="background-color:white;color:black;padding:30px;margin: 20px";>
+        <h3>OOP Building Blocks</h3>
+    <p>September 27, 2019</p>
+    <p>
+        Here are some of the basic building blocks of Objected-Oriented Programming that you will become familiar with:
+
+    </p><p><b>Class</b></p>
+        <p>A collection of related fields (instance and class variables) and methods that have one purpose.
+        </p><p><b>Instance variable (aka field variable or member variable</b></p>
+        <p>An instance variable is a variable that is defined in a class, but outside of a method. There is one copy of the variable for every instance (object) created from that class.
+
+        A common problem is trying to reference an instance variable from a static method. A static method (eg, main) can only reference static variables in its own class (or its own local variables).
+        </p>
+    <p><b>Class variable (aka static variable)</b></p>
+        <p>A class variable or static variable is defined in a class, but there is only one copy regardless of how many objects are created from that class. It's common to define static final variables (constants) that can be used by all methods, or by other classes. Color.blue is an example of a static final variable.
+        </p><p><b>Constructor</b></p>
+       <p> A constructor is a method with the same name as the class. When an object is created, the constructor for that class is called. If no constructor is defined, a default constructor is called. It's common to have multiple constructors taking different numbers of parameters. Before a constructor is executed, the constructor for the parent class is called implicitly if there is no parent constructor called explicitly on the first line.
+       </p><p><b>Override (applies to methods)</b></p>
+        <p>If a subclass redefines a method defined in a superclass, the method in the superclass is overridden.  The "super" keyword is how you refer to the overridden parent method. There is no way to explicitly call the "grandparent's" method if it was overridden by the parent class.
+        </p><p><b>Overload (applies to methods)</b></p>
+        <p>A method in a class is overloaded if there is more than one method by the same name. If the same name is used, the methods must different in the number and/or types of the parameters so that there is no confusion. This really has nothing to do with classes, only methods.
+        </p><p><b>Abstract class</b></p>
+       <p> A class which doesn't define all it's methods is called an abstract class. To be useful, there must be a subclass which defines the missing methods. The "You must declare this class abstract" error message from the Java compiler is rather misleading. This usually means that you declared your class to implement an interface, but failed to write all required methods -- or more commonly that there's a spelling error in a method header.
+       </p><p><b>Interface</b></p>
+        <p>An interface is a list of methods that must be implemented. A class that implements an interface must define all those methods. The method signatures (prototypes) are listed in the interface. Interfaces may also define public static final "constants". An interface is essentially the same as an completely abstract class.
+        </p><p><b>A variable or method can have an access modifier</b></p>
+        Public - visible to any class in your program
+        Private - visible only to your class (not sub classes)
+        Protected - visible to your class and any subclasses (also visible to any classes in the same package)
+    </p></div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding:40px;margin: 30px; font-size: 25px";>
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/bootcamp">About Bootcamp</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/bootcamp" id="navbarbottom" data-toggle="dropdown">
+                Blog
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="/gitHub">GitHub</a>
+                <a class="dropdown-item " href="/coreJava">Core Java</a>
+                <a class="dropdown-item" href="/OOP">Object Oriented Programming</a>
+                <a class="dropdown-item" href="/html">HTML/CSS</a>
+                <a class="dropdown-item" href="/bootStrap">BootStrap</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link " href="/author">About Author</a>
+        </li>
+    </ul>
+    </ul>
+</nav>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

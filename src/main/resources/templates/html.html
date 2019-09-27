@@ -5,7 +5,7 @@
     <title>HTML</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding:40px;margin: 30px; font-size: 25px";>
         <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="/">Home</a>
@@ -13,22 +13,19 @@
             <li class="nav-item">
                 <a class="nav-link" href="/bootcamp">About Bootcamp</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/gitHub">GitHub</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/coreJava">Core Java</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/bootcamp" id="navbardrop" data-toggle="dropdown">
+                    Blog
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/gitHub">GitHub</a>
+                    <a class="dropdown-item " href="/coreJava">Core Java</a>
+                    <a class="dropdown-item" href="/OOP">Object Oriented Programming</a>
+                    <a class="dropdown-item" href="/html">HTML/CSS</a>
+                    <a class="dropdown-item" href="/bootStrap">BootStrap</a>
+                </div>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="/OOP">Object Oriented Programming</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/html">HTML/CSS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/bootStrap">BootStrap</a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link " href="/author">About Author</a>
             </li>
@@ -38,6 +35,70 @@
 </head>
 <body>
 
+<div style="background-color:white;color:black;padding:30px;margin: 20px";>
+    <h3> What is HTML?</h3>
+    <p>September 27, 2019</p>
+    <P> HTML stands for Hyper Text Markup Language.</P>
+        <ul>
+        <li>HTML describes the structure of Web pages using markup  </li>
+            <li>HTML elements are the building blocks of HTML pages </li>
+            <li>HTML elements are represented by tags </li>
+</ul>
+        <p>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on. Browsers do not display the HTML tags, but use them to render the content of the page. An HTML tag is a special word or letter surrounded by angle brackets, < and >. You use tags to create HTML elements, such as paragraphs or links. Many elements have an opening tag and a closing tag. The opening tag always starts first and the closing tag follows second. The closing tag will always have a slash then the element.
+    </P></div>
+    <DIV style="background-color:white;color:black;padding:30px;margin: 20px";>
+    <h3>What is CSS?</h3>
+    <p>September 27, 2019</p>
+    <p>
+        CSS is a language that describes the style of an HTML document. CSS describes how HTML elements should be displayed.
+       </p>
+        <div style="background-color:antiquewhite;color:black;padding:30px;margin: 20px">
+            <h6>CSS Example</h6>
+       <p>
+
+       <p>body {
+        background-color: lightblue;
+            }</p>
+
+        <p>h1 {
+        color: white;
+        text-align: center;
+            }</p>
+
+        <p> body {
+        font-family: verdana;
+        font-size: 20px;
+        }
+       </p></div>
+
+           </div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding:40px;margin: 30px; font-size: 25px";>
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/bootcamp">About Bootcamp</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/bootcamp" id="navbarbottom" data-toggle="dropdown">
+                Blog
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="/gitHub">GitHub</a>
+                <a class="dropdown-item " href="/coreJava">Core Java</a>
+                <a class="dropdown-item" href="/OOP">Object Oriented Programming</a>
+                <a class="dropdown-item" href="/html">HTML/CSS</a>
+                <a class="dropdown-item" href="/bootStrap">BootStrap</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link " href="/author">About Author</a>
+        </li>
+    </ul>
+    </ul>
+</nav>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

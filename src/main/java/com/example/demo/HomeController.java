@@ -40,5 +40,10 @@ public class HomeController {
     public String author (){
         return "author";
     }
+
+    @RequestMapping("/blogs")
+    public String blogs (){
+        return "blogs";
+    }
 }
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<h lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Bootstrap</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding:50px;margin: 40px; font-size: 25px";>
         <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="/">Home</a>
@@ -13,21 +13,17 @@
             <li class="nav-item">
                 <a class="nav-link" href="/bootcamp">About Bootcamp</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/gitHub">GitHub</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/coreJava">Core Java</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="/OOP">Object Oriented Programming</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/html">HTML/CSS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/bootStrap">BootStrap</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/bootcamp" id="navbardrop" data-toggle="dropdown">
+                    Blog
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/gitHub">GitHub</a>
+                    <a class="dropdown-item " href="/coreJava">Core Java</a>
+                    <a class="dropdown-item" href="/OOP">Object Oriented Programming</a>
+                    <a class="dropdown-item" href="/html">HTML/CSS</a>
+                    <a class="dropdown-item" href="/bootStrap">BootStrap</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="/author">About Author</a>
@@ -37,7 +33,75 @@
     </nav>
 </head>
 <body>
+<DIV style="background-color:white;color:black;padding:40px;margin: 20px";>
+    <h3>Bootstrap</h3>
+    <p>September 27, 2019</p>
 
+        <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation and other interface components.
+    </p>
+    <p>Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high maintenance burden. According to Twitter developer Mark Otto:
+
+        "A super small group of developers and I got together to design and build a new internal tool and saw an opportunity to do something more. Through that process, we saw ourselves build something much more substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a way to document and share common design patterns and assets within the company."[4]
+
+        After a few months of development by a small group, many developers at Twitter began to contribute to the project as a part of Hack Week, a hackathon-style week for the Twitter development team. It was renamed from Twitter Blueprint to Bootstrap, and released as an open source project on August 19, 2011.[5] It has continued to be maintained by Mark Otto, Jacob Thornton, and a small group of core developers, as well as a large community of contributors.[6]
+
+        On January 31, 2012, Bootstrap 2 was released, which added built-in support for Glyphicons, several new components, as well as changes to many of the existing components. This version supports responsive web design. This means the layout of web pages adjusts dynamically, taking into account the characteristics of the device used (desktop, tablet, mobile phone). [7]
+
+        The next major version, Bootstrap 3, was released on August 19, 2013. It redesigned components to use flat design, and a mobile first approach.</P>
+
+    </P>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/330px-Boostrap_logo.svg.png"></div>
+<div style="background-color:white;color:black;padding:30px;margin: 20px";>
+    <h3>Bootstrap Features</h3>
+    <p>September 27, 2019</p>
+    <p>
+        Bootstrap is a web framework that focuses on simplifying the development of informative web pages (as opposed to web apps). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The end is a uniform appearance for prose, tables and form elements across web browsers. In addition, developers can take advantage of CSS classes defined in Bootstrap to further customize the appearance of their contents. For example, Bootstrap has provisioned for light- and dark-colored tables, page headings, more prominent pull quotes, and text with a highlight.
+
+        Bootstrap also comes with several JavaScript components in the form of jQuery plugins. They provide additional user interface elements such as dialog boxes, tooltips, and carousels. Each Bootstrap component consists of an HTML structure, CSS declarations, and in some cases accompanying JavaScript code. They also extend the functionality of some existing interface elements, including for example an auto-complete function for input fields.
+
+      <p>The most prominent components of Bootstrap are its layout components, as they affect an entire web page. The basic layout component is called "Container", as every other element in the page is placed in it. Developers can choose between a fixed-width container and a fluid-width container. While the latter always fills the width of the web page, the former uses one of the four predefined fixed widths, depending on the size of the screen showing the page:
+</p>
+    <ul>
+    <li>Smaller than 576 pixels</li>
+    <li>576–768 pixels</li>
+    <li>768–992 pixels</li>
+    <li>992–1200 pixels</li>
+    <li>Larger than 1200 pixels</li>
+    </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Twitter_Bootstrap_Under_Firefox_32.png">
+    <br></br>
+    <p>Once a container is in place, other Bootstrap layout components implement a CSS grid layout through defining rows and columns.
+
+        A precompiled version of Bootstrap is available in the form of one CSS file and three JavaScript files that can be readily added to any project. The raw form of Bootstrap, however, enables developers to implement further customization and size optimizations. This raw form is modular, meaning that the developer can remove unneeded components, apply a theme and modify the uncompiled Sass files.
+    </p>
+        </p></div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding:40px;margin: 30px; font-size: 25px";>
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/bootcamp">About Bootcamp</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/bootcamp" id="navbarbottom" data-toggle="dropdown">
+                Blog
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="/gitHub">GitHub</a>
+                <a class="dropdown-item " href="/coreJava">Core Java</a>
+                <a class="dropdown-item" href="/OOP">Object Oriented Programming</a>
+                <a class="dropdown-item" href="/html">HTML/CSS</a>
+                <a class="dropdown-item" href="/bootStrap">BootStrap</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link " href="/author">About Author</a>
+        </li>
+    </ul>
+    </ul>
+</nav>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
